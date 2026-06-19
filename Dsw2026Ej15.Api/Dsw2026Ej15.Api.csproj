@@ -15,5 +15,11 @@
     <ProjectReference Include="..\Dsw2026Ej15.Data\Dsw2026Ej15.Data.csproj" />
     <ProjectReference Include="..\Dsw2026Ej15.Domain\Dsw2026Ej15.Domain.csproj" />
   </ItemGroup>
+	<ItemGroup>
+		<None Include="..\Dsw2026Ej15.Data\specialities.json">
+			<Link>specialities.json</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 
 </Project>

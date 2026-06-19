@@ -40,5 +40,5 @@ public class ExceptionHandlingMiddleware
             await context.Response.WriteAsync(body);
         }
     }
-} }
-}
+} 
+

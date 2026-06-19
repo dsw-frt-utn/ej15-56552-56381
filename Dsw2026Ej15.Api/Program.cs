@@ -1,5 +1,6 @@
 using Dsw2026Ej15.Data;
 using Dsw2026Ej15.Domain.Interfaces;
+using Dsw2026Ej15.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,8 +22,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Persona 2 agrega acá, antes de MapControllers:
-// app.UseMiddleware<ExceptionHandlingMiddleware>();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseAuthorization();
 

@@ -19,7 +19,8 @@ public class PersistenceInMemory : IPersistence
 
     private List<Speciality> LoadSpecialities()
     {
-        var json = File.ReadAllText("specialities.json");
+        var path = Path.Combine(AppContext.BaseDirectory, "specialities.json");
+        var json = File.ReadAllText(path);
 
         var options = new JsonSerializerOptions
         {
